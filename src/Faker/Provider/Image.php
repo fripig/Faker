@@ -28,9 +28,9 @@ class Image extends Base
      *
      * @return string
      */
-    public static function imageUrl($width = 640, $height = 480, $category = null, $randomize = true, $word = null, $gray = false)
+    public static function imageUrl($width = 640, $height = 480, $category = null, $randomize = true, $word = null, $gray = false , $baseUrl = 'https://picsum.photos/')
     {
-        $baseUrl = "https://lorempixel.com/";
+        $baseUrl = $baseUrl ??  "https://picsum.photos/";
         $url = "{$width}/{$height}/";
 
         if ($gray) {
