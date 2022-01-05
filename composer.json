@@ -1,7 +1,7 @@
 {
-    "name": "fzaninotto/faker",
+    "name": "fripig/faker",
     "type": "library",
-    "description": "Faker is a PHP library that generates fake data for you.",
+    "description": "fork from Faker is a PHP library that generates fake data for you.",
     "keywords": [
         "faker",
         "fixtures",
@@ -11,6 +11,9 @@
     "authors": [
         {
             "name": "François Zaninotto"
+        },
+        {
+            "name": "fripig"
         }
     ],
     "require": {
@@ -38,5 +41,8 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "replace": {
+        "fzaninotto/faker":"*"
     }
 }
